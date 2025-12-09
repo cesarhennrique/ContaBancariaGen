@@ -1,4 +1,4 @@
-export class Conta {
+export abstract class Conta {
 
     private _numero: number;
     private _agencia: number;
@@ -89,6 +89,6 @@ export class Conta {
         console.log("Agência: " + this._agencia);
         console.log("Tipo da Conta: " + tipo);
         console.log("Titular: " + this._titular);
-        console.log("Saldo: " + this._saldo.toFixed(2));
+        console.log("Saldo: " + this._saldo.toFixed(2)); // to fixed (2) - define a quantidade de casas decimais pos a virgula
     }
 }
